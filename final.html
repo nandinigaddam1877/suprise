@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>One Last Thing ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="final-page">
+
+        <div class="final-glow"></div>
+
+        <div class="final-content">
+
+            <p class="eyebrow">
+                ✦ THE END... MAYBE ✦
+            </p>
+
+            <div class="final-heart">
+                💕
+            </div>
+
+            <h1>
+                Okay...
+                <br>
+                <span>One Last Thing 👀</span>
+            </h1>
+
+            <p class="final-intro">
+                You actually made it this far...
+                <br>
+                so I guess you deserve the final surprise. 😌
+            </p>
+
+
+            <button
+                id="surpriseButton"
+                onclick="showSurprise()">
+
+                Open it 🎁
+
+            </button>
+
+
+            <div id="surprise">
+
+
+                <div class="final-photo">
+
+                    <img src="image5.png"
+                         alt="Our memory">
+
+                </div>
+
+
+                <h2>
+                    You're stuck with me forever 😂💙
+                </h2>
+
+
+                <p class="surprise-text">
+                    The best thing which has been
+                    happen to meee 😘😘
+                </p>
+
+
+                <p class="surprise-text">
+                    I just wanted to create something
+                    that makes you smile.
+                </p>
+
+
+                <div class="divider">
+                    ♡ ♡ ♡
+                </div>
+
+
+                <p class="final-message">
+
+                    THANK YOU SO MUCH NANNA 🤌
+                    <br>
+
+                    BAVAAA 😘😘
+                    <br>
+
+                    BANGARAMM 🤗🤗
+
+                    <br><br>
+
+                    FOR COMING INTO MY LIFEE 🤗💙
+
+                    <br><br>
+
+                    LOVEEEE YOUUUU
+                    BANGARAMMMM 😘😘😘🫣🫣
+
+                </p>
+
+
+                <div class="hearts">
+                    ❤️　❤️　❤️　❤️　❤️
+                </div>
+
+
+                <p class="end-text">
+                    — That's all... for now. 🫶
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function showSurprise() {
+
+            const surprise =
+                document.getElementById("surprise");
+
+            const button =
+                document.getElementById("surpriseButton");
+
+
+            surprise.style.display = "block";
+
+            button.style.display = "none";
+
+
+            createHearts();
+
+        }
+
+
+        function createHearts() {
+
+            for (let i = 0; i < 30; i++) {
+
+                const heart =
+                    document.createElement("div");
+
+                heart.innerHTML = "💙";
+
+                heart.classList.add("floating-heart");
+
+                heart.style.left =
+                    Math.random() * 100 + "%";
+
+                heart.style.animationDuration =
+                    (3 + Math.random() * 3) + "s";
+
+
+                document.body.appendChild(heart);
+
+
+                setTimeout(() => {
+
+                    heart.remove();
+
+                }, 6000);
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
